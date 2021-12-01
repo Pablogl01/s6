@@ -1,0 +1,6 @@
+<div *ngIf="!show">
+    <p>S6.Intro Angular</p>
+    <p>Es un tutorial, en la qual mitjançant dos botons els nous usuaris puguin avançar i retrocedir en els consells, modificant-se el text d'ajuda i la imatge de fons.</p>
+    <button (click)=start()>Start</button>
+</div>
+<app-escena *ngIf="show"></app-escena>

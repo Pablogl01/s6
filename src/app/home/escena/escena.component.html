@@ -1,0 +1,12 @@
+
+<div id="fondo" [ngStyle]="{background: 'url(./assets/' + src + ') no-repeat', 'background-size': 'cover', width: '99vw', height: '95vh'}"> 
+    <div id="botones">
+        <button (click)=prev()>Prev</button>
+        <button (click)=next()>Next</button>
+    </div>
+    <div id="cont" >
+        <div *ngFor="let dato of datos2" [ngClass]="{'selected': dato.selected, 'non-selected': !dato.selected}">
+            <p src="">{{dato.text}}</p>
+        </div>
+    </div>
+</div>
